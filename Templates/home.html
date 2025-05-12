@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('images/milad-fakurian-58Z17lnVS4U-unsplash.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 6px black;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+.buttons a {
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.buttons a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #6b21a8;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+  </style>
+</head>
+<body>
+  <h1>Welcome to Brain Health AI</h1>
+  <div class="buttons">
+    <a href="index.html">Stroke Predictor</a>
+    <a href="AboutUs.html">About Us</a>
+  </div>
+</body>
+</html>

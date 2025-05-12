@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stroke Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="left-panel">
+    <h1>Brain Health AI</h1>
+    <p>Predict your stroke risk with just a few clicks. Stay safe, stay informed.</p>
+  </div>
+
+  <div class="right-panel">
+    <div class="form-container">
+      <h2>Stroke Risk Assessment</h2>
+      <form id="predictForm">
+        <input type="number" placeholder="Age" name="age" required />
+        <input type="number" step="0.1" placeholder="Glucose Level" name="avg_glucose_level" required />
+        <input type="number" step="0.1" placeholder="BMI" name="bmi" required />
+
+        <select name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <select name="ever_married">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <select name="work_type">
+          <option value="Private">Private</option>
+          <option value="Self-employed">Self-employed</option>
+          <option value="Govt_job">Govt Job</option>
+          <option value="children">Children</option>
+          <option value="Never_worked">Never Worked</option>
+        </select>
+
+        <select name="Residence_type">
+          <option value="Urban">Urban</option>
+          <option value="Rural">Rural</option>
+        </select>
+
+        <select name="smoking_status">
+          <option value="never smoked">Never Smoked</option>
+          <option value="formerly smoked">Formerly Smoked</option>
+          <option value="smokes">Smokes</option>
+          <option value="Unknown">Unknown</option>
+        </select>
+
+        <select name="hypertension">
+          <option value="0">No Hypertension</option>
+          <option value="1">Yes - Hypertension</option>
+        </select>
+
+        <select name="heart_disease">
+          <option value="0">No Heart Disease</option>
+          <option value="1">Yes - Heart Disease</option>
+        </select>
+
+        <button type="submit">Predict</button>
+      </form>
+      <div class="result" id="resultBox"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
